@@ -1,0 +1,44 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <title>{% trans "I am kala | Home page " %}</title>
+
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    {% include "partials/_css.html" %}
+
+</head>
+	<body class="front">
+		<!-- scrollToTop -->
+		<!-- ================ -->
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+		<!-- page wrapper start -->
+		<!-- ================ -->
+		<div class="page-wrapper">
+
+            {% include "partials/_social.html" %}
+            {% include "partials/_menu.html" %}
+            {% include "home/_banner.html" %}
+
+            {% include "home/_advs1.html" %}
+            {% include "home/_tech_new.html" %}
+
+            {% include "home/_advs2.html" %}
+            {% include "home/_health_new.html" %}
+            {% include "partials/_footer.html" %}
+
+
+		</div>
+		<!-- page-wrapper end -->
+        {% include "partials/_scripts.html" %}
+
+
+	</body>
+</html>
