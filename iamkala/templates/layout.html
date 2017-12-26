@@ -26,15 +26,9 @@
             {% include "partials/_social.html" %}
             {% include "partials/_menu.html" %}
             {% include "home/_banner.html" %}
-
-            {% include "home/_advs1.html" %}
-            {% include "home/_tech_new.html" %}
-
-            {% include "home/_advs2.html" %}
-            {% include "home/_health_new.html" %}
+            {% block content %}
+            {% endblock %}
             {% include "partials/_footer.html" %}
-
-
 		</div>
 		<!-- page-wrapper end -->
         {% include "partials/_scripts.html" %}

@@ -2,12 +2,20 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
+from .models import Tech
 from django.utils.translation import activate
 
 # Create your views here.
 def index(request):
-    activate('kh')
+
+    techs = Tech.objects.all()[:6]
+    print(techs[0].tech_title)
     return render(
         request,
-        "home/index.html"
+        "home/index.html",
+        {
+            "techs": techs,
+            "main_tech": techs[0]
+
+        }
     )

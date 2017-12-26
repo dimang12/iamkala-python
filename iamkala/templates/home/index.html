@@ -1,4 +1,8 @@
 {% extends "layout.html" %}
 {% block content %}
-    This is home page
+    {% include "home/_advs1.html" %}
+    {% include "home/_tech_new.html" with techs=techs %}
+
+    {% include "home/_advs2.html" %}
+    {% include "home/_health_new.html" %}
 {% endblock %}
