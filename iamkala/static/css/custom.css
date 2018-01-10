@@ -8,3 +8,104 @@ Created: August 2014
 License URI: http://support.wrapbootstrap.com/
 File Description: Place here your custom CSS styles
 */
+
+@keyframes slideInUp {
+
+}
+
+.box-style-3    {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 340px;
+}
+
+.box-style-3 h2{
+    transition: top .2s;
+    top: 35%;
+    position: relative;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.box-style-3 .slice-over    {
+    transition: top .2s;
+    padding-top: 10px;
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 60%;
+    left: 0;
+    height: 100%;
+}
+
+.box-style-3 .img-background    {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 0;
+}
+
+.box-style-3:hover h2 {
+    transition: top .3s ;
+    transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    top: 5%;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.box-style-3:hover .slice-over, .box-style-3:focus .slice-over {
+    transition: top .3s;
+    transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    top: 27%;
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+}
+
+
+.box-style-3 .slice-over .link-panel{
+    bottom: 110px;
+    right: 10px;
+    position: absolute;
+}
+
+.box-style-3 .slice-over .link-panel a{
+    text-decoration: none;
+    opacity: 0;
+    font-size: 70%;
+}
+
+.box-style-3:hover .link-panel a{
+    transition: opacity 2s, font-size .5s;
+    opacity: 1;
+    font-size: 100%;
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+}
+
+.font-16    { font-size: 16px; }
+.font-18    { font-size: 18px; }
+.font-20    { font-size: 20px; }
+.font-24    { font-size: 24px; }
+.font-30    { font-size: 30px; }
+
+.separator-red  {
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: 15px auto 15px;
+    background-color: #000;
+    position: relative;
+    /*border: 1px solid #cccccc;*/
+}
+
+.separator-red:after {
+    width: 50px;
+    height: 2px;
+    background: #ff6666;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+}

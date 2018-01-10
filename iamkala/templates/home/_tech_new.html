@@ -15,11 +15,21 @@
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <div class="row">
                         <div class="col-sm-6">
-                            <div class="box-style-1 white-bg object-non-visible mt-0" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
-                                <i class="fa fa-leaf"></i>
-                                <h2>{{ main_tech.tech_title }}</h2>
-                                <p>{{ main_tech.tech_highlight }}</p>
-                                <a href="page-services.html" class="btn-default btn">Read More</a>
+                            <div class="col-lg-12 white-bg object-non-visible mt-0 box-style-3" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
+                                <img class="img-background" src="{% static "images/vehicals/gallery-2.jpg" %}" alt="Testla 2018">
+                                <h2>
+                                    {{ main_tech.tech_title }}
+                                    <div class="separator-red"></div>
+                                </h2>
+                                <div class="slice-over col-lg-12">
+                                    <p>{{ main_tech.tech_highlight }}</p>
+                                    <div class="link-panel">
+                                        <a href="#" class="pr-10"> <span class="fa fa-bars"></span> {% trans "View Image" %}</a>
+                                        <a href="{% url "tech-detail" id=main_tech.id %}" class="pr-10"> <span class="fa fa-bars small"></span> {% trans "Detail" %}</a>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-sm-3">

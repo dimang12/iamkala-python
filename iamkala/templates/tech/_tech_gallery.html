@@ -1,0 +1,45 @@
+{% load static %}
+<div class="container-fluid">
+    <div class="container">
+        <div class="space-bottom"></div>
+            <h2>Pills</h2>
+            <!-- pills start -->
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills white space-top" role="tablist">
+                <li class="active"><a href="#pill-1" role="tab" data-toggle="tab" title="images"><i class="fa fa-camera pr-5"></i> Photo</a></li>
+                <li><a href="#pill-2" role="tab" data-toggle="tab" title="video"><i class="fa fa-video-camera pr-5"></i> Video</a></li>
+                <li><a href="#pill-3" role="tab" data-toggle="tab" title="text"><i class="fa fa-pencil pr-5"></i> Text</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content clear-style">
+                <div class="tab-pane active" id="pill-1">
+                    <div class="owl-carousel content-slider-with-controls">
+                        <div class="overlay-container">
+                            <img src="{% static "images/portfolio-item-1.jpg" %}" alt="">
+                            <a href="{% static "images/portfolio-item-1.jpg" %}" class="popup-img overlay" title="image title"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <div class="overlay-container">
+                            <img src="{% static "images/portfolio-item-2.jpg" %}" alt="">
+                            <a href="{% static "images/portfolio-item-2.jpg" %}" class="popup-img overlay" title="image title"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <div class="overlay-container">
+                            <img src="{% static "images/portfolio-item-3.jpg" %}" alt="">
+                            <a href="{% static "images/portfolio-item-3.jpg" %}" class="popup-img overlay" title="image title"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="pill-2">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//player.vimeo.com/video/29198414?byline=0&amp;portrait=0"></iframe>
+                        <p><a href="http://vimeo.com/29198414">Introducing Vimeo Music Store</a> from <a href="http://vimeo.com/staff">Vimeo Staff</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                    </div>
+                </div>
+                <div class="tab-pane" id="pill-3">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, labore iste! Pariatur tempore, dicta voluptatibus quis blanditiis voluptates in. Molestiae asperiores sed, pariatur nesciunt saepe. Culpa ipsam ut enim reiciendis!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque nihil obcaecati minus perferendis officiis cumque nesciunt quae dolorem ad tenetur voluptate blanditiis labore libero id veritatis similique facere, fugiat soluta omnis minima? Iusto optio hic a reiciendis, inventore numquam impedit quaerat deserunt, voluptatum illum in magni, aspernatur corporis mollitia nam? Ipsum, cumque facilis recusandae commodi dolorum sequi quis possimus, aut, ab incidunt dolorem perferendis rerum tenetur. Labore exercitationem magni perspiciatis laborum, aliquam officia molestias obcaecati, voluptatum quidem eum iure aut, officiis dicta cupiditate ab, sit aliquid. Corporis ducimus ab commodi officia? Inventore suscipit saepe dolorem vitae aperiam autem, iusto id, enim assumenda modi a voluptate aliquam molestiae quidem sapiente, obcaecati recusandae. Magni repellat dignissimos sint iste dolorem maxime accusantium quas repellendus quam ipsa, sapiente, beatae enim ab ex. Optio eveniet necessitatibus, tempora dolor eaque saepe, ipsam vero at officiis cumque, maxime consequuntur in ea, voluptate quae nesciunt hic delectus.</p>
+                </div>
+            </div>
+            <!-- pills end -->
+    </div>
+</div>

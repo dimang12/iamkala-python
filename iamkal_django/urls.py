@@ -20,5 +20,6 @@ from iamkala import views
 urlpatterns = [
 
     url(r'^$', views.index, name='home'),
+    url(r'^tech/(?P<id>\d+)/', views.techDetail , name='tech-detail'),
     url(r'^admin/', admin.site.urls),
 ]

@@ -19,3 +19,11 @@ def index(request):
 
         }
     )
+
+
+def techDetail(request, id):
+    print(id)
+    return render(
+        request,
+        "tech/tect-detail.html"
+    )
